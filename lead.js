@@ -91,7 +91,7 @@ async function inviteUser({ email, role, goal, urgency, sensitivity, tried }) {
         tried,
         source: "9fifi-life-compass"
       },
-      redirect_to: `${siteUrl}/thank-you`
+      redirect_to: `${siteUrl}/dashboard.html`
     })
   });
 

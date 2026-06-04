@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hồ sơ | Life Compass</title>
+    <meta name="description" content="Trang theo dõi hồ sơ định hướng Life Compass." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Thanh điều hướng">
+      <a class="brand" href="index.html" aria-label="Life Compass">
+        <span class="brand-mark">L</span>
+        <span>Life Compass</span>
+      </a>
+      <nav class="nav-links" aria-label="Liên kết chính">
+        <a href="index.html#method">Phương pháp</a>
+        <a href="index.html#join">Gửi hồ sơ mới</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="auth-section dashboard-section">
+        <div class="auth-copy">
+          <p class="eyebrow">Hồ sơ định hướng</p>
+          <h1>Không gian theo dõi riêng của bạn.</h1>
+          <p id="dashboard-intro">
+            Đang kiểm tra phiên đăng nhập. Nếu bạn vừa bấm magic link, trang này sẽ tự lưu phiên.
+          </p>
+        </div>
+
+        <div class="dashboard-card">
+          <div class="panel-topline">
+            <span>Session</span>
+            <span id="session-state">Checking</span>
+          </div>
+          <dl class="profile-list">
+            <div>
+              <dt>Email</dt>
+              <dd id="profile-email">Chưa có</dd>
+            </div>
+            <div>
+              <dt>Trạng thái hồ sơ</dt>
+              <dd>Đã ghi nhận, chờ đọc bối cảnh</dd>
+            </div>
+            <div>
+              <dt>Bước tiếp theo</dt>
+              <dd>Trả lời câu hỏi chuẩn bị trong email hoặc gửi thêm bối cảnh mới.</dd>
+            </div>
+          </dl>
+          <div class="hero-actions">
+            <a class="button primary" href="index.html#join">Gửi hồ sơ mới</a>
+            <button class="button secondary" id="logout-button" type="button">Đăng xuất</button>
+          </div>
+          <p class="form-status" id="dashboard-status" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="dashboard.js" type="module"></script>
+  </body>
+</html>
