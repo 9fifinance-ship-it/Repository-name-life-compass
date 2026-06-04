@@ -194,7 +194,12 @@ export default async function handler(req, res) {
     }
 
     await insertLead({ email, role, goal, urgency, sensitivity, tried });
-    await inviteUser({ email, role, goal, urgency, sensitivity, tried });
+
+    try {
+      await inviteUser({ email, role, goal, urgency, sensitivity, tried });
+    } catch (error) {
+      console.error("Supabase invite warning:", error);
+    }
 
     const emailJobs = [
       sendEmail({
