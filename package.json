@@ -1,0 +1,14 @@
+{
+  "name": "9fifi-life-compass",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A lightweight Vercel ladipage for life-question intake with Supabase lead/auth capture and Resend email follow-up.",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "node --check api/lead.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
